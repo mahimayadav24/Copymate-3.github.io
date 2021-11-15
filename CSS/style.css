@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: Montserrat__Bold;
+    src: url('../Fonts/Montserrat/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: Montserrat__Medium;
+    src: url('../Fonts/Montserrat/Montserrat-Medium.ttf');
+}
+
+.img__div1 img {
+    width: 100%;
+}
+
+.img__div1 {
+    position: relative;
+    top: 0;
+}
+
+.text__div1 {
+    position: absolute;
+    top: 10%;
+    left: 4%;
+}
+
+.sect1 {
+    height: 100vh;
+}
+
+.text__content1 h2 {
+    font-size: calc(20pt + 0.15vw);
+    color: rgba(255, 192, 141, 1);
+    font-family: 'Montserrat__Bold';
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.text__content1 h4 {
+    font-size: calc(14pt + 0.15vw);
+    font-family: 'Montserrat__Bold';
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 1);
+}
+
+.text__content1 p {
+    font-family: 'Montserrat__Medium';
+    font-size: calc(12pt + 0.15vw);
+    letter-spacing: 0.03em;
+    line-height: 1.2195;
+    color: rgba(255, 255, 255, 1);
+}
+
+.text__content1 span {
+    font-family: 'Montserrat__Bold';
+}
+
+.text__content1 h5 {
+    font-size: calc(14pt + 0.15vw);
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Montserrat__Bold';
+    letter-spacing: 0.03em;
+    line-height: 1.2195;
+    text-align: center;
+}
+
+.text__content1 h5 span {
+    color: #f2a000;
+}
+
+.button1 {
+    right: -20%;
+    position: absolute;
+    bottom: -45%;
+}
+
+@media screen and (max-width: 1280px) {
+    .button1 {
+        bottom: -35%;
+    }
+}
+
+.button1 button {
+    border: none;
+    background-color: rgba(255, 192, 141, 1);
+    padding: 15px 50px;
+    color: rgba(255, 255, 255, 1);
+    font-size: calc(15pt + 0.15vw);
+    font-family: 'Montserrat__Bold';
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.button1 button:hover {
+    transform: translateY(-2px);
+    transition: .3s ease-in-out;
+    background-color: #f2a000;
+    color: #FFFFFF;
+    box-shadow: 0px 12px 20px rgba(66, 66, 66, 0.2);
+}
+
+.fa-long-arrow-alt-right {
+    vertical-align: middle;
+    padding: 0px 10px;
+}
+
+@media screen and (max-width: 1080px) {
+    .text__content1 h2 {
+        font-size: calc(12pt + 0.15vw);
+    }
+    .text__content1 h4 {
+        font-size: calc(12pt + 0.15vw);
+    }
+    .text__content1 p {
+        font-size: calc(10pt + 0.15vw);
+    }
+    .text__content1 h5 {
+        font-size: calc(12pt + 0.15vw);
+    }
+    .button1 button {
+        font-size: calc(12pt + 0.15vw);
+    }
+    .button1 {
+        bottom: -35%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text__content1 h2 {
+        margin-left: -7rem;
+    }
+    .button1 {
+        right: -61%;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .text__content1 h2 {
+        font-size: calc(8pt + 0.15vw);
+    }
+    .text__content1 h4 {
+        font-size: calc(8pt + 0.15vw);
+    }
+    .text__content1 p {
+        font-size: calc(8pt + 0.15vw);
+    }
+    .text__content1 h5 {
+        font-size: calc(8pt + 0.15vw);
+    }
+    .button1 button {
+        font-size: calc(8pt + 0.15vw);
+    }
+    .button1 {
+        right: -61%;
+        bottom: 10%;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .text__content1 h2 {
+        font-size: calc(6pt + 0.15vw);
+    }
+    .text__content1 h4 {
+        font-size: calc(6pt + 0.15vw);
+    }
+    .text__content1 p {
+        font-size: calc(6pt + 0.15vw);
+    }
+    .text__content1 h5 {
+        font-size: calc(6pt + 0.15vw);
+        background-color: rgba(27, 114, 3, 1);
+        width: 160%;
+        padding: 10px;
+    }
+    .button1 button {
+        font-size: calc(6pt + 0.15vw);
+        padding: 10px 20px;
+    }
+    .button1 {
+        right: -50%;
+        bottom: 30%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .text__content1 h5 {
+        width: 130%;
+    }
+    .button1 {
+        right: -40%;
+        bottom: 30%;
+    }
+}
